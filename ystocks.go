@@ -19,6 +19,7 @@ type Stock struct {
     id string
 }
 
+// Data type to return stock properties that were queried for.
 type StockProperties [][]string
 
 // Named constants for various stock properties.
@@ -113,6 +114,9 @@ const (
     YearRange                   = "w0"
 )
 
+// Get a single property for a given stock. See the named constants, for
+// example: MarketCapitalization or YearHigh, for what to pass in as a
+// property string.
 func (s *Stock) getProperty(prop string) (string, error) {
     props, err := s.getProperties([]string{prop})
 
@@ -124,6 +128,7 @@ func (s *Stock) getProperty(prop string) (string, error) {
     return "", err
 }
 
+// Similar to getProperty(), but accepts an array of property names.
 func (s *Stock) getProperties(props []string) (StockProperties, error) {
     // Build up the Y! Finance API URL
     propsStr := strings.Join(props, "")
