@@ -22,7 +22,8 @@ type Stock struct {
 // Data type to return stock properties that were queried for.
 type StockProperties [][]string
 
-// Named constants for various stock properties.
+// Named constants for various stock properties (thanks to
+// http://code.google.com/p/yahoo-finance-managed/wiki/enumQuoteProperty).
 const (
     AfterHoursChangeRealtime    = "c8"
     AnnualizedGain              = "g3"
