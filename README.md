@@ -11,7 +11,7 @@ Installation
 Usage
 -----
 
-See `ystocks_test.go` for code examples.
+See `quotes_test.go` and `history_test.go` for code examples.
 
 Author(s)
 ---------
