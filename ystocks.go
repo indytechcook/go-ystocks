@@ -139,6 +139,7 @@ func (s *Stock) getProperties(props []string) (StockProperties, error) {
 
 	// HTTP GET the CSV data
 	resp, httpErr := http.Get(url)
+	defer resp.Body.Close()
 	if httpErr != nil {
 		return nil, httpErr
 	}
