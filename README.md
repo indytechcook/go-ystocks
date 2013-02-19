@@ -1,3 +1,5 @@
+Forked from cfdrake/go-ystocks
+
 go-ystocks
 ==========
 
@@ -6,7 +8,7 @@ Go library for using the Yahoo! Finance stock market API.
 Installation
 ------------
 
-    $ go get github.com/cfdrake/go-ystocks
+    $ go get github.com/indytechcook/go-ystocks
 
 Usage
 -----
